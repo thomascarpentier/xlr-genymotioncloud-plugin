@@ -1,0 +1,11 @@
+language: java
+sudo: false
+deploy:
+  provider: releases
+  file_glob: true
+  file: build/libs/*
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+repo: xebialabs-community/xlr-genymotioncloud-plugin
